@@ -15,6 +15,8 @@
 // SC O(1)
 //Idea: Array are sorted, so we can use a single pointer to track the last unique element
 // and replace the next element with the current element if it is different from the last unique element
+// no need to consider overlapping as we are replacing the duplicate element
+
 var removeDuplicates = function (nums) {
     const n = nums.length;
     let ansIndex = 0;
